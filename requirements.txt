@@ -1,3 +1,4 @@
+# Core project dependencies
 python-dotenv
 pandas
 numpy
@@ -6,7 +7,18 @@ certifi
 pymongo[srv]==3.12
 scikit-learn
 dill
-pyaml
+pyyaml
 
-## -e .
+# MLflow and required dependencies
+mlflow==3.5.0
+mlflow-skinny==3.5.0
+mlflow-tracing==3.5.0
+cryptography>=43.0.0,<47
+fastmcp>=2.0.0,<3
+flask
+flask-cors
+gunicorn
+waitress
 
+# Editable install (your local package)
+-e .
